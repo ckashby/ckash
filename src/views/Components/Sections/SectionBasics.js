@@ -86,7 +86,7 @@ export default function SectionBasics() {
         <div className={classes.space50} />
         <div id="inputs">
           <div className={classes.title}>
-            <h3>Inputs</h3>
+            <h3>Join our email list</h3>
           </div>
           <GridContainer>
             <GridItem xs={12} sm={4} md={4} lg={3}>
@@ -132,7 +132,7 @@ export default function SectionBasics() {
           <GridContainer>
             <GridItem xs={12} sm={6} md={4} lg={3}>
               <div className={classes.title}>
-                <h3>Checkboxes</h3>
+                <h3>My Checkboxes</h3>
               </div>
               <div
                 className={
@@ -158,92 +158,10 @@ export default function SectionBasics() {
                   label="Unchecked"
                 />
               </div>
-              <div
-                className={
-                  classes.checkboxAndRadio +
-                  " " +
-                  classes.checkboxAndRadioHorizontal
-                }
-              >
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      tabIndex={-1}
-                      onClick={() => handleToggle(22)}
-                      checked={checked.indexOf(22) !== -1 ? true : false}
-                      checkedIcon={<Check className={classes.checkedIcon} />}
-                      icon={<Check className={classes.uncheckedIcon} />}
-                      classes={{
-                        checked: classes.checked,
-                        root: classes.checkRoot,
-                      }}
-                    />
-                  }
-                  classes={{ label: classes.label, root: classes.labelRoot }}
-                  label="Checked"
-                />
-              </div>
-              <div
-                className={
-                  classes.checkboxAndRadio +
-                  " " +
-                  classes.checkboxAndRadioHorizontal
-                }
-              >
-                <FormControlLabel
-                  disabled
-                  control={
-                    <Checkbox
-                      tabIndex={-1}
-                      checkedIcon={<Check className={classes.checkedIcon} />}
-                      icon={<Check className={classes.uncheckedIcon} />}
-                      classes={{
-                        checked: classes.checked,
-                        root: classes.checkRoot,
-                      }}
-                    />
-                  }
-                  classes={{
-                    label: classes.label,
-                    disabled: classes.disabledCheckboxAndRadio,
-                    root: classes.labelRoot,
-                  }}
-                  label="Disabled Unchecked"
-                />
-              </div>
-              <div
-                className={
-                  classes.checkboxAndRadio +
-                  " " +
-                  classes.checkboxAndRadioHorizontal
-                }
-              >
-                <FormControlLabel
-                  disabled
-                  control={
-                    <Checkbox
-                      tabIndex={-1}
-                      checked={checked.indexOf(24) !== -1 ? true : false}
-                      checkedIcon={<Check className={classes.checkedIcon} />}
-                      icon={<Check className={classes.uncheckedIcon} />}
-                      classes={{
-                        checked: classes.checked,
-                        root: classes.checkRoot,
-                      }}
-                    />
-                  }
-                  classes={{
-                    label: classes.label,
-                    disabled: classes.disabledCheckboxAndRadio,
-                    root: classes.labelRoot,
-                  }}
-                  label="Disabled Checked"
-                />
-              </div>
             </GridItem>
             <GridItem xs={12} sm={6} md={4} lg={3}>
               <div className={classes.title}>
-                <h3>Radio Buttons</h3>
+                <h3>My Radio Buttons</h3>
               </div>
               <div
                 className={
@@ -277,107 +195,6 @@ export default function SectionBasics() {
                     root: classes.labelRoot,
                   }}
                   label="First Radio"
-                />
-              </div>
-              <div
-                className={
-                  classes.checkboxAndRadio +
-                  " " +
-                  classes.checkboxAndRadioHorizontal
-                }
-              >
-                <FormControlLabel
-                  control={
-                    <Radio
-                      checked={selectedEnabled === "b"}
-                      onChange={() => setSelectedEnabled("b")}
-                      value="b"
-                      name="radio button enabled"
-                      aria-label="B"
-                      icon={
-                        <FiberManualRecord className={classes.radioUnchecked} />
-                      }
-                      checkedIcon={
-                        <FiberManualRecord className={classes.radioChecked} />
-                      }
-                      classes={{
-                        checked: classes.radio,
-                        root: classes.radioRoot,
-                      }}
-                    />
-                  }
-                  classes={{
-                    label: classes.label,
-                    root: classes.labelRoot,
-                  }}
-                  label="Second Radio"
-                />
-              </div>
-              <div
-                className={
-                  classes.checkboxAndRadio +
-                  " " +
-                  classes.checkboxAndRadioHorizontal
-                }
-              >
-                <FormControlLabel
-                  disabled
-                  control={
-                    <Radio
-                      checked={false}
-                      value="a"
-                      name="radio button disabled"
-                      aria-label="B"
-                      icon={
-                        <FiberManualRecord className={classes.radioUnchecked} />
-                      }
-                      checkedIcon={
-                        <FiberManualRecord className={classes.radioChecked} />
-                      }
-                      classes={{
-                        checked: classes.radio,
-                        disabled: classes.disabledCheckboxAndRadio,
-                        root: classes.radioRoot,
-                      }}
-                    />
-                  }
-                  classes={{
-                    label: classes.label,
-                    root: classes.labelRoot,
-                  }}
-                  label="Disabled Unchecked Radio"
-                />
-              </div>
-              <div
-                className={
-                  classes.checkboxAndRadio +
-                  " " +
-                  classes.checkboxAndRadioHorizontal
-                }
-              >
-                <FormControlLabel
-                  disabled
-                  control={
-                    <Radio
-                      checked={true}
-                      value="b"
-                      name="radio button disabled"
-                      aria-label="B"
-                      icon={
-                        <FiberManualRecord className={classes.radioUnchecked} />
-                      }
-                      checkedIcon={
-                        <FiberManualRecord className={classes.radioChecked} />
-                      }
-                      classes={{
-                        checked: classes.radio,
-                        disabled: classes.disabledCheckboxAndRadio,
-                        root: classes.radioRoot,
-                      }}
-                    />
-                  }
-                  classes={{ label: classes.label, root: classes.labelRoot }}
-                  label="Disabled Checked Radio"
                 />
               </div>
             </GridItem>
@@ -439,31 +256,13 @@ export default function SectionBasics() {
               </div>
               <CustomLinearProgress
                 variant="determinate"
-                color="primary"
-                value={30}
+                color="warning"
+                value={80}
               />
               <CustomLinearProgress
                 variant="determinate"
                 color="info"
                 value={60}
-              />
-              <CustomLinearProgress
-                variant="determinate"
-                color="success"
-                value={100}
-                style={{ width: "35%", display: "inline-block" }}
-              />
-              <CustomLinearProgress
-                variant="determinate"
-                color="warning"
-                value={100}
-                style={{ width: "20%", display: "inline-block" }}
-              />
-              <CustomLinearProgress
-                variant="determinate"
-                color="danger"
-                value={25}
-                style={{ width: "45%", display: "inline-block" }}
               />
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
@@ -502,7 +301,7 @@ export default function SectionBasics() {
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.title}>
-                <h3>Sliders</h3>
+                <h3>My Sliders</h3>
               </div>
               <div id="sliderRegular" className="slider-primary" />
               <br />
@@ -510,14 +309,11 @@ export default function SectionBasics() {
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.title}>
-                <h3>Badges</h3>
+                <h3>My Badges</h3>
               </div>
-              <Badge>default</Badge>
               <Badge color="primary">primary</Badge>
               <Badge color="info">info</Badge>
               <Badge color="success">success</Badge>
-              <Badge color="warning">warning</Badge>
-              <Badge color="danger">danger</Badge>
               <Badge color="rose">rose</Badge>
             </GridItem>
           </GridContainer>
