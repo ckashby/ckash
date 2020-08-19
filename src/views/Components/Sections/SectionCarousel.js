@@ -13,6 +13,8 @@ import Card from "components/Card/Card.js";
 import image1 from "assets/img/bg.jpg";
 import image2 from "assets/img/bg2.jpg";
 import image3 from "assets/img/bg3.jpg";
+import image4 from "assets/img/bg4.jpg";
+import image7 from "assets/img/bg7.jpg";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.js";
 
@@ -26,7 +28,7 @@ export default function SectionCarousel() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false
+    autoplay: false,
   };
   return (
     <div className={classes.section}>
@@ -63,6 +65,24 @@ export default function SectionCarousel() {
                     <h4>
                       <LocationOn className="slick-icons" />
                       Yellowstone National Park, United States
+                    </h4>
+                  </div>
+                </div>
+                <div>
+                  <img src={image4} alt="Fourt slide" className="slick-image" />
+                  <div className="slick-caption">
+                    <h4>
+                      <LocationOn className="slick-icons" />
+                      Somewhere in the USA
+                    </h4>
+                  </div>
+                </div>
+                <div>
+                  <img src={image7} alt="Fifth slide" className="slick-image" />
+                  <div className="slick-caption">
+                    <h4>
+                      <LocationOn className="slick-icons" />
+                      Yosemite National Park, United States
                     </h4>
                   </div>
                 </div>
