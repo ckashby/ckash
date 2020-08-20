@@ -53,9 +53,9 @@ export default function Components(props) {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Ashby Inc React Demo</h1>
+                <h1 className={classes.title}>Ashby Robotics</h1>
                 <h3 className={classes.subtitle}>
-                  This demo is based on Material Design.
+                  This demo is based on Material Design for React.
                 </h3>
               </div>
             </GridItem>
