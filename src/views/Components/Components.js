@@ -55,7 +55,7 @@ export default function Components(props) {
               <div className={classes.brand}>
                 <h1 className={classes.title}>Ashby Robotics</h1>
                 <h3 className={classes.subtitle}>
-                  This demo is based on Material Design for React.
+                  This demo is based on Material Design and Styled Components.
                 </h3>
               </div>
             </GridItem>
