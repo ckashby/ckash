@@ -73,6 +73,7 @@ export default function SectionBasics() {
       <div className={classes.container}>
         <div className={classes.title}>
           <h2>Welcome to Ashby Robotics</h2>
+          <p>We are very glad you are here.</p>
         </div>
         <div id="buttons">
           <GridContainer justify="center">
